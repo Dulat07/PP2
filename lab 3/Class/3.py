@@ -1,6 +1,6 @@
 class Shape:
     def __init__(self):
-        pass    
+        pass
     def area(self):
         return 0
     
@@ -11,11 +11,9 @@ class Rectangle(Shape):
     def area(self):
         print(self.length * self.width)
 
-qp = Shape()
-qp.area()
-length,width = map(int, input().split())
-pq = Rectangle(length,width)
+pq = Shape()
 pq.area()
-
-    
+length,width = map(int,input().split())
+qp = Rectangle(length,width)
+qp.area()
 
