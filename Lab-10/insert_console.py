@@ -11,7 +11,7 @@ def insert_contact(name, phone):
         with psycopg2.connect(**config) as conn:
             with conn.cursor() as cur:
                 cur.execute(query, (name, phone))
-                print(f"✅ Contact '{name}' added successfully.")
+                print(f"Contact '{name}' added successfully.")
     except Exception as e:
         print(" Error inserting contact:", e)
 

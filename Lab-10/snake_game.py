@@ -60,10 +60,10 @@ conn = psycopg2.connect(**config)
 user = get_user(conn, username)
 if user:
     user_id = user[0]
-    print(f"🔁 Добро пожаловать, {username}!")
+    print(f" Добро пожаловать, {username}!")
 else:
     user_id = create_user(conn, username)[0]
-    print(f"🆕 Новый игрок создан: {username}")
+    print(f" Новый игрок создан: {username}")
 
 # Starting position
 x_ch = (cell_number // 2) * cell_size
